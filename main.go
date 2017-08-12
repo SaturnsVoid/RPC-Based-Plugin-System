@@ -30,7 +30,7 @@ func main() {
 			var Data string
 			err = client.Call("Plugin.Get", "http://checkip.amazonaws.com", &Data)
 			if err != nil {
-				log.Fatal("Error calling Revert: ", err)
+				log.Fatal("Error calling Get: ", err)
 			}
 			fmt.Println("Plugin:", Data)
 		} else if scan.Text() == "exit" {
